@@ -1,0 +1,24 @@
+
+.container {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+
+.azul {
+    background-color: blue;
+
+}
+
+.verde {
+    background-color: green;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.violeta {
+    background-color: violet;
+}
