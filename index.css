@@ -1,4 +1,4 @@
-
+/* 
 .container {
     display: grid;
     height: 80vh;
@@ -21,4 +21,41 @@
 
 .violeta {
     background-color: violet;
+} */
+
+
+.container-page {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+	grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+}
+
+.header {
+    background: #1297FF;
+    grid-column-start: x0;
+    grid-column-end: x3;
+    /* es lo mismo que escribir grid-row: x0 / x3;*/
+    display:flex;
+    justify-content: center;
+    color: hotpink;
+    
+}
+
+.sidebar {
+    background: #C0C0C0;
+    grid-row: y1 / y2;
+    color: white;
+}
+
+.content {
+    background: #FF7E79;
+    grid-column: x1 / x3;
+    grid-row: y1 / y3;
+}
+
+.footer {
+    background: #73FA79;
+    grid-column: x0 / x3;
+    grid-row: y2;
 }
